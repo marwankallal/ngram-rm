@@ -92,3 +92,7 @@ target/
 
 # pyenv
 .python-version
+
+
+# vim files
+*.swp
