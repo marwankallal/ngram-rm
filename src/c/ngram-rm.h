@@ -1,14 +1,10 @@
-typedef struct edge edge;
 typedef struct node node;
 
-struct edge{
-    char *value;
-    node *child;
-};
-
 struct node{
-    edge *children;
+    node **children;
     char *value;
+    int child_cnt;
+    int depth;
 };
 
 void build_ngrams(node *root, char **ngrams);
